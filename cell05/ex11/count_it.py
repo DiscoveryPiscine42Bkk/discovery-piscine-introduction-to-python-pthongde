@@ -1,8 +1,11 @@
 import sys
-if len(sys.argv) == 1:
+
+args = sys.argv[1:]
+
+if len(args) == 0:
     print("none")
 else:
-    print(f"parameters: {len(sys.argv) - 1}")
-    
-    for param in sys.argv[1:]:
-        print(f"{param}: {len(param)}")
+    print(f"parameter: {len(args)}")
+    for word in args:
+        print(f"{word}: {len(word)}")
+        
