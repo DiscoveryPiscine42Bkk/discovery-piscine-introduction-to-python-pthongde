@@ -1,4 +1,4 @@
-from Rush00.ex00.checkmate import checkmate
+from Rush00.ex00.ex00.checkmate import checkmate
 
 def main():
     board = """\
